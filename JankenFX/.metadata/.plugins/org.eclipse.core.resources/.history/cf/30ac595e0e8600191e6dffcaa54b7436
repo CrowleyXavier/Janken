@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+
+<BorderPane prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.FormController">
+	<!-- TODO Add Nodes -->
+	<bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button_OK" mnemonicParsing="false"  text="OK" />
+            <Button fx:id="button_Rock" mnemonicParsing="false" text="グー" />
+            <Button fx:id="button_Scissors" mnemonicParsing="false"  text="チョキ" />
+            <Button fx:id="button_Paper" mnemonicParsing="false"  text="パー" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label fx:id="label_text" alignment="CENTER" prefHeight="80.0" prefWidth="400.0" text="じゃんけんゲーム" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image_player" fitHeight="188.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../pic/Rock.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image_enemy" fitHeight="188.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../pic/Rock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <Label text="あいて" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </right>
+   <left>
+      <Label text="あなた" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </left>
+</BorderPane>

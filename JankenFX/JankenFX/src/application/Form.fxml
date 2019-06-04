@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormController">
+	<!-- TODO Add Nodes -->
+	<bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button_OK" mnemonicParsing="false" onAction="#onOKClicked" text="OK" />
+            <Button fx:id="button_Rock" mnemonicParsing="false" onAction="#onRockClicked" text="グー" />
+            <Button fx:id="button_Scissors" mnemonicParsing="false" onAction="#onScissorsClicked" text="チョキ" />
+            <Button fx:id="button_Paper" mnemonicParsing="false" onAction="#onPaperClicked" text="パー" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image_player" fitHeight="188.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../pic/piece.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image_enemy" fitHeight="188.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../pic/Sazae.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <Label text="あいて" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </right>
+   <left>
+      <Label text="あなた" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </left>
+   <top>
+      <VBox prefHeight="60.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_text" prefHeight="27.0" prefWidth="501.0" text="じゃんけんゲーム" />
+            <Label fx:id="label_kekka" prefHeight="27.0" prefWidth="388.0" text="0勝0敗0引き分け" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

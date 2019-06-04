@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from プロジェクト &apos;JankenFX&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;JankenFX&apos;&#x0D;&#x0A;- オリジナル要素:&#x0D;&#x0A;     Paper.png&#x0D;&#x0A;     Rock.png&#x0D;&#x0A;     Scissors.png" description="要素の削除" element1="src/game/Rock.png" element2="src/game/Scissors.png" element3="src/game/Paper.png" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1559572718158" subPackages="false" version="1.0"/>
+</session>

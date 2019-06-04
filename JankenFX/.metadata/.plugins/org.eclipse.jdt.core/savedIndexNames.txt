@@ -1,0 +1,21 @@
+INDEX VERSION 1.131+C:\Users\Ryoma Fushiki\Desktop\JankenFX\.metadata\.plugins\org.eclipse.jdt.core
+806560361.index
+1891193123.index
+3066939280.index
+288239626.index
+1447510595.index
+3470280307.index
+2107919993.index
+3183918207.index
+3255315808.index
+4093476559.index
+4225758666.index
+3195514712.index
+1136991779.index
+3481519232.index
+3331760990.index
+2729493588.index
+996546421.index
+2043817963.index
+1700427354.index
+2566575859.index
