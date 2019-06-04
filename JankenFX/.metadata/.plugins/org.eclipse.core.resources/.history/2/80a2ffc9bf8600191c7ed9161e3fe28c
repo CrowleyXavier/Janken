@@ -38,10 +38,7 @@ public class Battle {
  //進行状況を次の段階へ進める。phaseが3になったら、0へ更新
  public void nextPhase() {
      phase++;
-     if(phase>2)phase= 1;
- }
- public void ResetPhase() {
-     phase=0;
+     if(phase>2)phase= 0;
  }
 
  //進行状況のゲッター
