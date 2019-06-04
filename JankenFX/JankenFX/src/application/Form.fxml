@@ -11,8 +11,9 @@
 <BorderPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormController">
 	<!-- TODO Add Nodes -->
 	<bottom>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="72.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
+            <Button fx:id="button_Reset" mnemonicParsing="false" onAction="#onResetClicked" text="Reset" />
             <Button fx:id="button_OK" mnemonicParsing="false" onAction="#onOKClicked" text="OK" />
             <Button fx:id="button_Rock" mnemonicParsing="false" onAction="#onRockClicked" text="グー" />
             <Button fx:id="button_Scissors" mnemonicParsing="false" onAction="#onScissorsClicked" text="チョキ" />
@@ -51,10 +52,10 @@
       </Label>
    </left>
    <top>
-      <VBox prefHeight="60.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="label_text" prefHeight="27.0" prefWidth="501.0" text="じゃんけんゲーム" />
-            <Label fx:id="label_kekka" prefHeight="27.0" prefWidth="388.0" text="0勝0敗0引き分け" />
+            <Label fx:id="label_text" alignment="CENTER" prefHeight="70.0" prefWidth="500.0" text="じゃんけんゲーム" />
+            <Label fx:id="label_kekka" alignment="CENTER" prefHeight="55.0" prefWidth="500.0" text="0勝0敗0引き分け" />
          </children>
       </VBox>
    </top>

@@ -13,7 +13,6 @@
 	<bottom>
       <HBox alignment="CENTER" prefHeight="72.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="button_Reset" mnemonicParsing="false" onAction="#onResetClicked" text="Reset" />
             <Button fx:id="button_OK" mnemonicParsing="false" onAction="#onOKClicked" text="OK" />
             <Button fx:id="button_Rock" mnemonicParsing="false" onAction="#onRockClicked" text="グー" />
             <Button fx:id="button_Scissors" mnemonicParsing="false" onAction="#onScissorsClicked" text="チョキ" />
@@ -54,8 +53,8 @@
    <top>
       <VBox prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="label_text" alignment="CENTER" prefHeight="70.0" prefWidth="500.0" text="じゃんけんゲーム" />
-            <Label fx:id="label_kekka" alignment="CENTER" prefHeight="55.0" prefWidth="500.0" text="0勝0敗0引き分け" />
+            <Label fx:id="label_text" alignment="CENTER" prefHeight="70.0" prefWidth="200.0" text="じゃんけんゲーム" />
+            <Label fx:id="label_kekka" alignment="CENTER" prefHeight="55.0" prefWidth="200.0" text="0勝0敗0引き分け" />
          </children>
       </VBox>
    </top>

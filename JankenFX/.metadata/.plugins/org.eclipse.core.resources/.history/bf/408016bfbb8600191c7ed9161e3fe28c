@@ -89,7 +89,7 @@ public class FormController {
     	lose=0;
     	draw=0;
     	label_kekka.setText(win+"勝"+lose+"敗"+draw+"引き分け");
-
+    	
     }
 //  進行状況に応じて描画の更新をする
     public void draw() {
