@@ -38,7 +38,6 @@ public class Main extends Application {
 	public void changeView(String fxml) {
 		try {
 			stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(fxml))));
-			Main.stage.show();
 		}catch(IOException ex) {
 			Logger.getLogger(Main.class.getName()).log(Level.SEVERE,null,ex);
 		}
