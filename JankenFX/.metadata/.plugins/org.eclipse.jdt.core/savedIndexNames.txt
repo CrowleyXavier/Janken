@@ -3,10 +3,10 @@ INDEX VERSION 1.131+C:\Users\Ryoma Fushiki\Documents\GitHub\Janken\JankenFX\.met
 3481519232.index
 1447510595.index
 806560361.index
-2566575859.index
-1700427354.index
-3331760990.index
 996546421.index
+1700427354.index
+2566575859.index
+3331760990.index
 4225758666.index
 4093476559.index
 3255315808.index

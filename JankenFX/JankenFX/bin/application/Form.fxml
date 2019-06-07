@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
 
 <BorderPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormController">
 	<!-- TODO Add Nodes -->
@@ -26,12 +24,12 @@
          <children>
             <ImageView fx:id="image_player" fitHeight="188.0" fitWidth="200.0">
                <image>
-                  <Image url="@../pic/piece.jpg" />
+                  <Image url="@../pic/Man.png" />
                </image>
             </ImageView>
             <ImageView fx:id="image_enemy" fitHeight="188.0" fitWidth="200.0">
                <image>
-                  <Image url="@../pic/Sazae.jpg" />
+                  <Image url="@../pic/Woman.png" />
                </image>
             </ImageView>
          </children>

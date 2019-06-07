@@ -21,16 +21,9 @@ public class FormController {
     @FXML private ImageView image_enemy;
 
     private Battle battle= new Battle();
-    private final Image Piece=new Image("pic/piece.jpg");
-    private final Image PieceG=new Image("pic/pieceG.jpg");
-    private final Image PieceP=new Image("pic/pieceP.jpg");
-    private final Image PieceC=new Image("pic/pieceC.jpg");
 
-    private final Image Sazae=new Image("pic/Sazae.jpg");
-    private final Image SazaeG=new Image("pic/SazaeG.jpg");
-    private final Image SazaeP=new Image("pic/SazaeP.jpg");
-    private final Image SazaeC=new Image("pic/SazaeC.jpg");
-
+    private final Image Woman=new Image("pic/Woman.png");
+    private final Image Man=new Image("pic/Man.png");
     private final Image ROCK= new Image("pic/Rock.png");
     private final Image SCISSORS= new Image("pic/Scissors.png");
     private final Image PAPER= new Image("pic/Paper.png");
@@ -85,36 +78,37 @@ public class FormController {
         }
     }
 
-    @FXML
+    @FXML//勝敗をリセットし、初期画面に戻る
     public void onResetClicked() {
 
         battle.ResetPhase();
         draw();
     }
+
 //  進行状況に応じて描画の更新をする
     public void draw() {
         switch (battle.getPhase()) {
-        case 0:
+        case 0://Home画面
         	win=0;
         	lose=0;
         	draw=0;
             label_text.setText("じゃんけんゲーム三点先取です!!");
             label_kekka.setText(win+"勝"+lose+"敗"+draw+"引き分け");
-            image_player.setImage(Piece);
-            image_enemy.setImage(Sazae);
+            image_player.setImage(Man);
+            image_enemy.setImage(Woman);
             break;
         case 1:
             label_text.setText("さいしょはグー、じゃんけん...");
             break;
         case 2:
-            image_player.setImage(PlayerchangeImage(hand_player));
-            image_enemy.setImage(EnemychangeImage(hand_enemy));
+            image_player.setImage(changeImage(hand_player));
+            image_enemy.setImage(changeImage(hand_enemy));
             switch (result) {
             case 1:
             	win++;
-                label_text.setText("キュアピースの勝ちです！！");
+                label_text.setText("あなたの勝ちです！！");
                 label_kekka.setText(win+"勝"+lose+"敗"+draw+"引き分け");
-                if(win==3) {
+                if(win==3) {//三勝するとWin画面に遷移する
                 	new Main().changeView("Win.fxml");
                 	win=0;
                 	lose=0;
@@ -123,9 +117,9 @@ public class FormController {
                 break;
             case 2:
             	lose++;
-                label_text.setText("キュアピースの負けです...");
+                label_text.setText("あなたの負けです...");
                 label_kekka.setText(win+"勝"+lose+"敗"+draw+"引き分け");
-                if(lose==3) {
+                if(lose==3) {//三敗するとLose画面に遷移する
                 	new Main().changeView("Lose.fxml");
                 	win=0;
                 	lose=0;
@@ -149,28 +143,17 @@ public class FormController {
     }
 
 //  じゃんけんの手の画像の更新をする
-    private Image PlayerchangeImage(int hand) {
+    private Image changeImage(int hand) {
         switch (hand) {
         case 1:
-            return PieceG;
+            return ROCK;
         case 2:
-            return PieceC;
+            return PAPER;
         case 3:
-            return PieceP;
+            return SCISSORS;
         default:
-            return Piece; //例外
+            return ROCK; //例外処理
         }
     }
-    private Image EnemychangeImage(int hand) {
-        switch (hand) {
-        case 1:
-            return SazaeG;
-        case 2:
-            return SazaeC;
-        case 3:
-            return SazaeP;
-        default:
-            return Sazae; //例外
-        }
-    }
+
 }

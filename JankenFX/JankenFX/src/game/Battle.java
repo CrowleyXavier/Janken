@@ -35,7 +35,7 @@ public class Battle {
      return -1; //例外
  }
 
- //進行状況を次の段階へ進める。phaseが3になったら、0へ更新
+ //進行状況を次の段階へ進める。phaseが2になったら、1へ更新
  public void nextPhase() {
      phase++;
      if(phase>2)phase= 1;
